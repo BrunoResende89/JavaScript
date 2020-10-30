@@ -6,8 +6,8 @@
     <title>Primeiros passos com DOM</title>
     <style>
         body {
-            background-color: rgb(122, 51, 18);
-            color: white;
+            background-color: rgb(11, 23, 94);
+            color: rgb(17, 16, 16);
             font:  normal 16pt Arial;
         }
     </style>
@@ -16,9 +16,12 @@
     <h1>Iniciando estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usa o <strong>DOM</strong> em JavaScript.</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
     <SCRIPt>
-        window.document.write('Olá, Mundo!')
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        var d = window.document.querySelector('div#msg')
+        d.style.color = 'white'
     </SCRIPt>
 </body>
 </html>
